@@ -33,4 +33,4 @@ jobs:
       with:
         name: prototype-app-image
         path: |
-          target/prototype.war
+          target/demo-0.0.1-SNAPSHOT.war

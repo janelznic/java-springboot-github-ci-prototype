@@ -15,10 +15,10 @@ FROM openjdk:11-jre-alpine
 WORKDIR /app
 
 # Copy WAR package
-COPY --from=builder /app/target/prototype.war /app/prototype.war
+COPY --from=builder /app/target/demo-0.0.1-SNAPSHOT.war /app/demo-0.0.1-SNAPSHOT.war
 
 # Expose port
 EXPOSE 8080
 
 # Run app
-CMD ["java", "-jar", "prototype.war"]
+CMD ["java", "-jar", "demo-0.0.1-SNAPSHOT.war"]
