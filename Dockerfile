@@ -17,8 +17,8 @@ WORKDIR /app
 # Copy WAR package
 COPY --from=builder /app/target/prototype.war /app/prototype.war
 
-# Exponování portu
+# Expose port
 EXPOSE 8080
 
-# Spuštění aplikace pomocí JBoss/WildFly
+# Run app
 CMD ["java", "-jar", "prototype.war"]
